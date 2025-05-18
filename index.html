@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>هاجر | السيرة الذاتية الاحترافية</title>
+  <title>هاجر محمد إبراهيم | السيرة الذاتية الاحترافية</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,15 +24,9 @@
       overflow-x: hidden;
     }
     @keyframes gradientMove {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
     .container {
       max-width: 1000px;
@@ -43,8 +37,7 @@
       box-shadow: 0 0 40px rgba(122, 58, 255, 0.4);
       animation: fadeIn 1.2s ease-in-out;
     }
-    h1,
-    h2 {
+    h1, h2 {
       text-align: center;
       color: #7a3aff;
       animation: pulseText 2s infinite;
@@ -74,40 +67,27 @@
       list-style: none;
       padding: 0;
     }
-    li {
-      background: #f4ecff;
+    ul li {
+      background: rgba(195, 160, 255, 0.15);
       margin: 0.6rem 0;
       padding: 1rem 1.5rem;
       border-radius: 15px;
-      font-weight: 600;
-      box-shadow: 0 4px 12px rgba(122, 58, 255, 0.2);
+      font-weight: 700;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(122, 58, 255, 0.2);
+      color: #4b2a99;
+      cursor: pointer;
       position: relative;
-      overflow: hidden;
-      color: #2e1a70;
-      animation: popIn 0.6s ease-out forwards;
+      transition: all 0.4s ease;
+      z-index: 0;
     }
-    li::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.6),
-        transparent
-      );
-      transform: skewX(-25deg);
-      animation: shine 2s infinite;
-      pointer-events: none;
+    ul li:hover {
+      background: linear-gradient(135deg, #9b6eff, #7a3aff);
+      color: #fff;
+      box-shadow: 0 0 30px #a574ff, 0 0 60px #b68cff;
+      transform: scale(1.05);
+      border-color: #a574ff;
       z-index: 1;
-      border-radius: 15px;
-    }
-    li > * {
-      position: relative;
-      z-index: 2;
     }
     .highlight-box {
       margin-top: 2rem;
@@ -120,6 +100,8 @@
       font-size: 1.2rem;
       color: #700e85;
       animation: flash 2s ease-in-out infinite;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(199, 154, 255, 0.6);
     }
     .social-links {
       margin-top: 2rem;
@@ -151,99 +133,37 @@
     }
 
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
     }
     @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(100px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    @keyframes popIn {
-      0% {
-        transform: scale(0.9);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
+      0% { opacity: 0; transform: translateY(100px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
     @keyframes flash {
-      0%,
-      100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.5;
-      }
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
     }
     @keyframes pulseText {
-      0% {
-        transform: scale(1);
-        text-shadow: 0 0 10px #b799ff;
-      }
-      50% {
-        transform: scale(1.08);
-        text-shadow: 0 0 30px #9f70ff;
-      }
-      100% {
-        transform: scale(1);
-        text-shadow: 0 0 10px #b799ff;
-      }
+      0% { transform: scale(1); text-shadow: 0 0 10px #b799ff; }
+      50% { transform: scale(1.08); text-shadow: 0 0 30px #9f70ff; }
+      100% { transform: scale(1); text-shadow: 0 0 10px #b799ff; }
     }
     @keyframes zoomGlow {
-      0% {
-        transform: scale(1);
-        text-shadow: 0 0 5px #a78fff;
-      }
-      50% {
-        transform: scale(1.05);
-        text-shadow: 0 0 20px #7a3aff;
-      }
-      100% {
-        transform: scale(1);
-        text-shadow: 0 0 5px #a78fff;
-      }
+      0% { transform: scale(1); text-shadow: 0 0 5px #a78fff; }
+      50% { transform: scale(1.05); text-shadow: 0 0 20px #7a3aff; }
+      100% { transform: scale(1); text-shadow: 0 0 5px #a78fff; }
     }
     @keyframes pulseIcon {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(122, 58, 255, 0.3);
-      }
-      50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 30px rgba(122, 58, 255, 0.6);
-      }
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(122, 58, 255, 0.3);
-      }
-    }
-    @keyframes shine {
-      0% {
-        left: -75%;
-      }
-      100% {
-        left: 125%;
-      }
+      0% { transform: scale(1); box-shadow: 0 0 10px rgba(122, 58, 255, 0.3); }
+      50% { transform: scale(1.1); box-shadow: 0 0 30px rgba(122, 58, 255, 0.6); }
+      100% { transform: scale(1); box-shadow: 0 0 10px rgba(122, 58, 255, 0.3); }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>هاجر</h1>
+    <h1>هاجر محمد إبراهيم</h1>
     <h2>مصممة جرافيك | ناشرة إعلانات | مدربة إشراف تيليجرام</h2>
 
     <div class="section">
@@ -294,15 +214,9 @@
     </div>
 
     <div class="social-links">
-      <a href="https://t.me/Hagirmohammed_bot" target="_blank"
-        ><i class="fab fa-telegram"></i>تيليجرام</a
-      >
-      <a href="https://wa.me/+201091749348" target="_blank"
-        ><i class="fab fa-whatsapp"></i>واتساب</a
-      >
-      <a href="mailto:hagr39989@gmail.com"
-        ><i class="fas fa-envelope"></i>بريد إلكتروني</a
-      >
+      <a href="https://t.me/Hagirmohammed_bot" target="_blank"><i class="fab fa-telegram"></i>تيليجرام</a>
+      <a href="https://wa.me/+201091749348" target="_blank"><i class="fab fa-whatsapp"></i>واتساب</a>
+      <a href="mailto:hagr39989@gmail.com"><i class="fas fa-envelope"></i>بريد إلكتروني</a>
     </div>
   </div>
 </body>
